@@ -6,7 +6,7 @@ using namespace std;
 class Solution {
 
 public:
-    int maxLength(vector<int>& ribbons, int targetNumberOfCuts) const {
+    int maxLength(const vector<int>& ribbons, int targetNumberOfCuts) const {
         int maxPossibleCutSize = 0;
         int minLimitCutSize = 1;
         int maxLimitCutSize = roundedDownMeanCutForSumOfAllRibbonSizes(ribbons, targetNumberOfCuts);
